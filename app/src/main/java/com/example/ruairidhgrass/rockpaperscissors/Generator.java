@@ -13,6 +13,8 @@ public class Generator {
         moves.add("Rock");
         moves.add("Paper");
         moves.add("Scissors");
+        moves.add("Lizard");
+        moves.add("Spock");
         randomGenerator = new Random();
     }
 
@@ -22,7 +24,7 @@ public class Generator {
     }
 
     public String getRandomMove() {
-        int index = randomGenerator.nextInt(3);
+        int index = randomGenerator.nextInt(5);
         String move = moves.get(index);
         return move;
     }
